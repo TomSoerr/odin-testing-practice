@@ -2,6 +2,7 @@
   "name": "odin-testing-practice",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "webpack --mode=production",
     "watch": "webpack --watch",
