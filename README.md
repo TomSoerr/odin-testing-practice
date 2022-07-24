@@ -1,20 +1,9 @@
-# My “odin-testing-practice” Project
-![preview gif](./media/prev.gif) 
+# My “Testing Practice” Project
 
 ## Description
-In this project from “The Odin Project” I create a ... <br>
-This project has:
-
-- ...
-- ...
-
-...
+In this project from “The Odin Project” I write some simple functions with the test driven development approche.
 
 ## Links
-- [Live Preview]()
-- Link to the [Assignment]()
+- Link to the [Assignment](https://www.theodinproject.com/lessons/node-path-javascript-testing-practice)
 - See my next [Project]()
-
-## Notes
-...
 

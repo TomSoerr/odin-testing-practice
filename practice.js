@@ -94,4 +94,22 @@ function caesarCipher(string, shift) {
   return arr.join('');
 }
 
-export { capitalize, reverseString, calculator, caesarCipher };
+// 5
+function analyzeArray(data) {
+  if (!(data instanceof Array)) throw new Error('no array');
+  if (data.length === 0)
+    return {
+      average: 0,
+      min: 0,
+      max: 0,
+      length: 0,
+    };
+  return {
+    average: data.reduce((prev, curr) => prev + curr, 0) / data.length,
+    min: data.reduce((prev, curr) => (curr < prev ? curr : prev), Infinity),
+    max: data.reduce((prev, curr) => (curr > prev ? curr : prev), -Infinity),
+    length: data.length,
+  };
+}
+
+export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };

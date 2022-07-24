@@ -4,6 +4,7 @@ import {
   reverseString,
   calculator,
   caesarCipher,
+  analyzeArray,
 } from './practice';
 
 test('capitalize: Easy Path 1', () => {
@@ -124,4 +125,53 @@ test('caesarCipher: invalid shift 2', () => {
 
 test('caesarCipher: empty', () => {
   expect(caesarCipher('')).toMatch(/^$/);
+});
+
+test('analyzeArray: Easy Path 1', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  });
+});
+
+test('analyzeArray: Easy Path 2', () => {
+  expect(analyzeArray([1, 2, 3, 4, 5])).toEqual({
+    average: 3,
+    min: 1,
+    max: 5,
+    length: 5,
+  });
+});
+
+test('analyzeArray: negative number', () => {
+  expect(analyzeArray([-42, 77])).toEqual({
+    average: 17.5,
+    min: -42,
+    max: 77,
+    length: 2,
+  });
+});
+
+test('analyzeArray: nothing', () => {
+  expect(analyzeArray([])).toEqual({
+    average: 0,
+    min: 0,
+    max: 0,
+    length: 0,
+  });
+});
+
+test('analyzeArray: one item', () => {
+  expect(analyzeArray([1])).toEqual({
+    average: 1,
+    min: 1,
+    max: 1,
+    length: 1,
+  });
+});
+
+test('analyzeArray: no array', () => {
+  expect(() => analyzeArray('1, 2, 3')).toThrow('no array');
 });
