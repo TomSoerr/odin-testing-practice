@@ -5,5 +5,5 @@ In this project from “The Odin Project” I write some simple functions with t
 
 ## Links
 - Link to the [Assignment](https://www.theodinproject.com/lessons/node-path-javascript-testing-practice)
-- See my next [Project]()
+- See my next [Project](https://github.com/TomSoerr/odin-battleship)
 
